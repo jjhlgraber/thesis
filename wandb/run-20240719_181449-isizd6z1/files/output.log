@@ -1,0 +1,13 @@
+  | Name          | Type               | Params | Mode
+-------------------------------------------------------------
+0 | base_embedder | SetCNNEmbedder     | 41.3 K | train
+1 | embedder      | Sequential         | 41.3 K | train
+2 | aggregate_seq | Flatten            | 0      | train
+3 | final_layer   | SetClassifierLayer | 780    | train
+-------------------------------------------------------------
+42.1 K    Trainable params
+0         Non-trainable params
+42.1 K    Total params
+0.168     Total estimated model params size (MB)
+/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/loops/fit_loop.py:298: The number of training batches (1) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+`Trainer.fit` stopped: `max_epochs=1` reached.

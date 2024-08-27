@@ -1,0 +1,5 @@
+hidden_sizes_classifier: []
+label_choice: is_set
+lr: 0.001
+n_features: 4
+seq_len: 3

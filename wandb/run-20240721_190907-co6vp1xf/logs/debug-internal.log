@@ -1,0 +1,30 @@
+2024-07-21 19:09:07,618 INFO    StreamThr :30062 [internal.py:wandb_internal():85] W&B internal server running at pid: 30062, started at: 2024-07-21 19:09:07.615203
+2024-07-21 19:09:07,620 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status
+2024-07-21 19:09:07,638 INFO    WriterThread:30062 [datastore.py:open_for_write():87] open: ./wandb/run-20240721_190907-co6vp1xf/run-co6vp1xf.wandb
+2024-07-21 19:09:07,639 DEBUG   SenderThread:30062 [sender.py:send():379] send: header
+2024-07-21 19:09:07,640 DEBUG   SenderThread:30062 [sender.py:send():379] send: run
+2024-07-21 19:09:07,644 INFO    SenderThread:30062 [sender.py:_setup_resume():749] checking resume status for None/first_project/co6vp1xf
+2024-07-21 19:09:08,473 INFO    SenderThread:30062 [dir_watcher.py:__init__():211] watching files in: ./wandb/run-20240721_190907-co6vp1xf/files
+2024-07-21 19:09:08,473 INFO    SenderThread:30062 [sender.py:_start_run_threads():1188] run started: co6vp1xf with start time 1721581747.615379
+2024-07-21 19:09:08,488 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: check_version
+2024-07-21 19:09:08,488 DEBUG   SenderThread:30062 [sender.py:send_request():406] send_request: check_version
+2024-07-21 19:09:08,981 INFO    Thread-12 :30062 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240721_190903-sqwbjzt3/files/conda-environment.yaml
+2024-07-21 19:09:09,059 DEBUG   HandlerThread:30062 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-21 19:09:09,059 INFO    HandlerThread:30062 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-21 19:09:09,064 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status_report
+2024-07-21 19:09:09,066 DEBUG   SenderThread:30062 [sender.py:send():379] send: files
+2024-07-21 19:09:09,066 INFO    SenderThread:30062 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-21 19:09:09,656 INFO    wandb-upload_0:30062 [upload_job.py:push():130] Uploaded file /tmp/tmp9w9b50mkwandb/icgn51o6-wandb-metadata.json
+2024-07-21 19:09:09,982 INFO    Thread-12 :30062 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240721_190903-sqwbjzt3/files/wandb-metadata.json
+2024-07-21 19:09:13,489 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-21 19:09:13,598 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status_report
+2024-07-21 19:09:14,068 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status_report
+2024-07-21 19:09:18,491 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-21 19:09:18,599 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status_report
+2024-07-21 19:09:19,069 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status_report
+2024-07-21 19:09:23,492 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-21 19:09:23,600 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status_report
+2024-07-21 19:09:24,070 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status_report
+2024-07-21 19:09:28,493 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-21 19:09:28,602 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status_report
+2024-07-21 19:09:29,071 DEBUG   HandlerThread:30062 [handler.py:handle_request():158] handle_request: status_report

@@ -1,0 +1,73 @@
+{
+    "os": "Linux-6.5.0-41-generic-x86_64-with-glibc2.35",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-07-19T21:33:44.229738",
+    "startedAt": "2024-07-19T21:33:42.747945",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "host": "job-laptop",
+    "username": "job",
+    "executable": "/home/job/miniconda3/envs/LTN/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2631.9184999999998,
+        "min": 400.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2827.997,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 940.262,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2680.951,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2653.979,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2763.959,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2350.522,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2670.221,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2733.464,
+            "min": 400.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 233.17998886108398,
+            "used": 125.908447265625
+        }
+    },
+    "memory": {
+        "total": 7.4439544677734375
+    }
+}

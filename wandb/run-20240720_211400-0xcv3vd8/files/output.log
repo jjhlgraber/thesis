@@ -1,0 +1,13 @@
+  | Name                | Type                    | Params | Mode
+------------------------------------------------------------------------
+0 | contextual_embedder | SimpleAbstractorEncoder | 10.8 K | train
+1 | embedder            | Sequential              | 10.8 K | train
+2 | final_layer         | SetClassifierLayer      | 194    | train
+3 | aggregate_seq       | Flatten                 | 0      | train
+4 | accuracy            | BinaryAccuracy          | 0      | train
+------------------------------------------------------------------------
+11.0 K    Trainable params
+0         Non-trainable params
+11.0 K    Total params
+0.044     Total estimated model params size (MB)
+/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...

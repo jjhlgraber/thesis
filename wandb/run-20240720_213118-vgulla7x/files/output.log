@@ -1,0 +1,20 @@
+  | Name                | Type                    | Params | Mode
+------------------------------------------------------------------------
+0 | contextual_embedder | SimpleAbstractorEncoder | 33.5 K | train
+1 | embedder            | Sequential              | 33.5 K | train
+2 | final_layer         | SetClassifierLayer      | 193    | train
+3 | aggregate_seq       | Flatten                 | 0      | train
+4 | accuracy            | BinaryAccuracy          | 0      | train
+------------------------------------------------------------------------
+33.7 K    Trainable params
+0         Non-trainable params
+33.7 K    Total params
+0.135     Total estimated model params size (MB)
+/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+Exception ignored in: <function tqdm.__del__ at 0x7d7774558820>
+Traceback (most recent call last):
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/tqdm/std.py", line 1148, in __del__
+    self.close()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/tqdm/notebook.py", line 284, in close
+    self.disp(close=True, check_delay=False)
+AttributeError: 'Tqdm' object has no attribute 'disp'

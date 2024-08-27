@@ -1,0 +1,12 @@
+  | Name          | Type               | Params | Mode
+-------------------------------------------------------------
+0 | base_embedder | SetCNNEmbedder     | 41.3 K | train
+1 | embedder      | Sequential         | 41.3 K | train
+2 | aggregate_seq | Flatten            | 0      | train
+3 | final_layer   | SetClassifierLayer | 780    | train
+-------------------------------------------------------------
+42.1 K    Trainable params
+0         Non-trainable params
+42.1 K    Total params
+0.168     Total estimated model params size (MB)
+`Trainer.fit` stopped: `max_epochs=2` reached.

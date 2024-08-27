@@ -1,0 +1,536 @@
+2024-07-29 01:12:47,885 INFO    StreamThr :44198 [internal.py:wandb_internal():85] W&B internal server running at pid: 44198, started at: 2024-07-29 01:12:47.883708
+2024-07-29 01:12:47,889 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status
+2024-07-29 01:12:47,919 INFO    WriterThread:44198 [datastore.py:open_for_write():87] open: ./wandb/run-20240729_011247-chetiwzw/run-chetiwzw.wandb
+2024-07-29 01:12:47,920 DEBUG   SenderThread:44198 [sender.py:send():379] send: header
+2024-07-29 01:12:47,987 DEBUG   SenderThread:44198 [sender.py:send():379] send: run
+2024-07-29 01:12:47,990 INFO    SenderThread:44198 [sender.py:_setup_resume():749] checking resume status for None/first_project/chetiwzw
+2024-07-29 01:12:48,992 INFO    SenderThread:44198 [dir_watcher.py:__init__():211] watching files in: ./wandb/run-20240729_011247-chetiwzw/files
+2024-07-29 01:12:48,992 INFO    SenderThread:44198 [sender.py:_start_run_threads():1188] run started: chetiwzw with start time 1722208367.884815
+2024-07-29 01:12:49,021 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: check_version
+2024-07-29 01:12:49,022 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: check_version
+2024-07-29 01:12:49,247 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: run_start
+2024-07-29 01:12:49,250 DEBUG   HandlerThread:44198 [system_info.py:__init__():26] System info init
+2024-07-29 01:12:49,251 DEBUG   HandlerThread:44198 [system_info.py:__init__():41] System info init done
+2024-07-29 01:12:49,251 INFO    HandlerThread:44198 [system_monitor.py:start():194] Starting system monitor
+2024-07-29 01:12:49,252 INFO    SystemMonitor:44198 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-29 01:12:49,252 INFO    HandlerThread:44198 [system_monitor.py:probe():214] Collecting system info
+2024-07-29 01:12:49,263 DEBUG   HandlerThread:44198 [system_info.py:probe():152] Probing system
+2024-07-29 01:12:49,273 INFO    SystemMonitor:44198 [interfaces.py:start():188] Started cpu monitoring
+2024-07-29 01:12:49,276 DEBUG   HandlerThread:44198 [gitlib.py:_init_repo():56] git repository is invalid
+2024-07-29 01:12:49,276 DEBUG   HandlerThread:44198 [system_info.py:probe():200] Probing system done
+2024-07-29 01:12:49,277 DEBUG   HandlerThread:44198 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-44-generic-x86_64-with-glibc2.35', 'python': '3.9.19', 'heartbeatAt': '2024-07-28T23:12:49.263360', 'startedAt': '2024-07-28T23:12:47.867772', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'job-laptop', 'username': 'job', 'executable': '/home/job/miniconda3/envs/LTN/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2720.279125, 'min': 400.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 2474.962, 'min': 400.0, 'max': 3600.0}, {'current': 2556.25, 'min': 400.0, 'max': 3600.0}, {'current': 2684.609, 'min': 400.0, 'max': 3600.0}, {'current': 2475.302, 'min': 400.0, 'max': 3600.0}, {'current': 2474.672, 'min': 400.0, 'max': 3600.0}, {'current': 2555.683, 'min': 400.0, 'max': 3600.0}, {'current': 2684.468, 'min': 400.0, 'max': 3600.0}, {'current': 2475.242, 'min': 400.0, 'max': 3600.0}], 'disk': {'/': {'total': 233.17998886108398, 'used': 125.24495697021484}}, 'memory': {'total': 7.443946838378906}}
+2024-07-29 01:12:49,277 INFO    HandlerThread:44198 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-29 01:12:49,277 INFO    HandlerThread:44198 [system_monitor.py:probe():227] Publishing system info
+2024-07-29 01:12:49,277 DEBUG   HandlerThread:44198 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-29 01:12:49,298 INFO    SystemMonitor:44198 [interfaces.py:start():188] Started disk monitoring
+2024-07-29 01:12:49,301 INFO    SystemMonitor:44198 [interfaces.py:start():188] Started memory monitoring
+2024-07-29 01:12:49,307 INFO    SystemMonitor:44198 [interfaces.py:start():188] Started network monitoring
+2024-07-29 01:12:49,996 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_011247-chetiwzw/files/conda-environment.yaml
+2024-07-29 01:12:54,280 DEBUG   HandlerThread:44198 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-29 01:12:54,282 INFO    HandlerThread:44198 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-29 01:12:54,286 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:12:54,286 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-29 01:12:54,287 DEBUG   SenderThread:44198 [sender.py:send():379] send: files
+2024-07-29 01:12:54,288 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-29 01:12:54,452 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-29 01:12:54,452 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:12:54,453 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: python_packages
+2024-07-29 01:12:54,453 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:12:54,458 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:54,783 DEBUG   SenderThread:44198 [sender.py:send():379] send: telemetry
+2024-07-29 01:12:54,783 DEBUG   SenderThread:44198 [sender.py:send():379] send: telemetry
+2024-07-29 01:12:54,783 DEBUG   SenderThread:44198 [sender.py:send():379] send: metric
+2024-07-29 01:12:54,783 DEBUG   SenderThread:44198 [sender.py:send():379] send: telemetry
+2024-07-29 01:12:54,783 DEBUG   SenderThread:44198 [sender.py:send():379] send: metric
+2024-07-29 01:12:54,783 WARNING SenderThread:44198 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-07-29 01:12:54,947 DEBUG   SenderThread:44198 [sender.py:send():379] send: config
+2024-07-29 01:12:54,996 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/conda-environment.yaml
+2024-07-29 01:12:54,996 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_011247-chetiwzw/files/output.log
+2024-07-29 01:12:54,997 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_011247-chetiwzw/files/wandb-metadata.json
+2024-07-29 01:12:54,997 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_011247-chetiwzw/files/requirements.txt
+2024-07-29 01:12:55,031 INFO    wandb-upload_0:44198 [upload_job.py:push():130] Uploaded file /tmp/tmpstgcli6kwandb/eacffmyc-wandb-metadata.json
+2024-07-29 01:12:55,453 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:56,453 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:56,997 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/output.log
+2024-07-29 01:12:57,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:58,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:58,950 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:12:59,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:00,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:01,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:02,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:03,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:04,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:04,456 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:05,456 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:06,457 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:07,486 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:08,478 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:09,452 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:13:09,453 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:13:09,496 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:09,694 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:10,478 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:11,477 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:12,478 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:12,513 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:13:12,517 DEBUG   SenderThread:44198 [sender.py:send():379] send: metric
+2024-07-29 01:13:12,517 DEBUG   SenderThread:44198 [sender.py:send():379] send: metric
+2024-07-29 01:13:12,518 DEBUG   SenderThread:44198 [sender.py:send():379] send: metric
+2024-07-29 01:13:12,518 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:13:12,518 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:13:12,522 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:13:13,009 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:13:13,479 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:14,478 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:15,456 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:15,478 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:16,479 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:17,479 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:18,478 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:19,478 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:20,479 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:21,460 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:21,479 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:22,013 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/config.yaml
+2024-07-29 01:13:22,479 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:23,479 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:24,158 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:13:24,159 DEBUG   SenderThread:44198 [sender.py:send():379] send: metric
+2024-07-29 01:13:24,160 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:13:24,160 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:13:24,163 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:13:24,453 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:13:24,454 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:13:24,479 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:25,017 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:13:25,480 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:26,480 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:26,668 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:27,479 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:27,505 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:13:27,506 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:13:27,506 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:13:27,507 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:13:28,018 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:13:28,482 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:29,482 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:30,481 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:31,482 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:32,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:32,481 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:33,481 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:34,481 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:35,482 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:36,482 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:37,456 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:37,482 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:38,484 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:39,453 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:13:39,454 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:13:39,495 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:40,483 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:41,257 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:13:41,258 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:13:41,259 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:13:41,265 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:13:41,483 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:42,027 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:13:42,484 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:43,266 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:43,483 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:44,484 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:45,483 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:46,484 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:47,484 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:48,456 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:48,486 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:49,307 DEBUG   SystemMonitor:44198 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-29 01:13:49,309 DEBUG   SenderThread:44198 [sender.py:send():379] send: stats
+2024-07-29 01:13:49,484 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:50,484 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:51,485 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:52,485 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:53,086 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:13:53,087 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:13:53,088 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:13:53,088 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:13:53,487 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:54,032 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:13:54,095 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:54,453 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:13:54,454 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:13:54,498 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:55,033 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/config.yaml
+2024-07-29 01:13:55,486 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:56,241 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:13:56,243 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:13:56,243 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:13:56,244 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:13:56,486 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:57,035 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:13:57,486 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:58,489 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:13:59,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:13:59,489 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:00,488 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:01,488 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:02,488 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:03,488 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:04,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:04,488 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:05,623 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:06,622 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:07,622 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:08,622 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:09,177 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:14:09,178 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:14:09,179 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:14:09,179 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:14:09,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:14:09,456 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:14:09,623 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:09,683 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:10,041 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:14:10,623 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:11,623 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:12,623 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:13,626 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:14,624 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:15,457 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:15,624 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:16,624 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:17,625 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:18,624 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:19,289 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:14:19,290 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:14:19,290 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:14:19,290 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:14:19,309 DEBUG   SenderThread:44198 [sender.py:send():379] send: stats
+2024-07-29 01:14:19,624 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:20,051 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:14:20,458 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:20,624 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:21,625 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:22,249 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:14:22,250 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:14:22,251 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:14:22,251 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:14:22,625 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:23,052 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:14:23,625 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:24,453 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:14:24,454 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:14:24,625 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:25,626 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:25,690 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:26,626 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:27,626 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:28,626 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:29,626 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:30,626 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:31,457 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:31,626 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:32,627 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:33,626 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:34,627 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:35,163 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:14:35,165 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:14:35,166 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:14:35,167 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:14:35,627 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:36,062 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:14:36,627 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:37,168 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:37,627 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:38,627 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:39,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:14:39,455 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:14:39,627 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:40,628 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:41,630 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:42,628 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:42,714 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:43,628 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:44,101 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:14:44,102 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:14:44,102 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:14:44,105 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:14:44,628 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:45,068 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:14:45,629 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:46,628 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:47,631 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:47,776 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:14:47,778 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:14:47,779 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:14:47,779 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:14:47,780 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:48,070 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:14:48,629 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:49,310 DEBUG   SenderThread:44198 [sender.py:send():379] send: stats
+2024-07-29 01:14:49,629 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:50,631 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:51,630 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:52,630 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:53,458 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:53,630 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:54,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:14:54,454 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:14:54,631 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:55,631 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:56,631 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:57,633 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:58,633 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:14:58,638 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:14:59,633 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:00,632 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:01,632 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:02,632 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:03,113 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:15:03,114 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:15:03,115 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:15:03,116 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:15:03,632 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:04,079 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:15:04,117 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:04,632 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:05,632 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:06,633 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:07,634 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:08,636 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:09,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:15:09,454 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:15:09,633 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:09,690 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:10,634 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:11,635 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:12,634 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:13,634 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:14,634 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:14,802 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:15:14,803 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:15:14,804 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:15:14,804 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:15:14,804 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:15,085 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:15:15,636 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:16,635 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:17,635 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:18,005 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:15:18,006 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:15:18,007 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:15:18,007 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:15:18,087 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:15:18,635 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:19,311 DEBUG   SenderThread:44198 [sender.py:send():379] send: stats
+2024-07-29 01:15:19,635 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:20,460 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:20,635 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:21,635 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:22,636 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:23,636 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:24,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:15:24,455 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:15:24,636 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:25,636 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:25,672 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:26,637 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:27,636 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:28,637 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:29,637 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:30,637 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:31,372 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:15:31,374 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:15:31,374 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:15:31,375 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:31,375 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:15:31,637 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:32,095 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:15:32,639 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:33,637 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:34,637 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:35,637 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:36,460 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:36,637 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:37,638 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:38,639 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:39,454 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:15:39,455 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:15:39,639 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:40,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:41,640 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:41,696 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:42,278 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:15:42,279 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:15:42,280 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:15:42,280 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:15:42,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:43,104 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:15:43,640 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:44,640 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:45,640 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:45,724 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:15:45,726 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:15:45,727 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:15:45,727 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:15:46,105 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:15:46,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:46,728 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:47,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:48,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:49,312 DEBUG   SenderThread:44198 [sender.py:send():379] send: stats
+2024-07-29 01:15:49,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:50,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:51,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:52,460 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:52,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:53,641 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:54,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:15:54,455 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:15:54,642 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:55,642 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:56,653 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:57,653 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:57,749 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:15:58,653 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:15:59,656 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:00,348 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:16:00,350 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:16:00,350 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:16:00,351 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:16:00,657 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:01,115 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:16:01,657 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:02,659 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:03,352 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:03,658 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:04,659 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:05,659 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:06,658 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:07,659 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:08,462 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:08,659 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:09,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:16:09,455 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:16:09,659 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:10,659 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:11,659 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:12,659 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:13,660 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:13,703 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:14,660 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:15,213 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:16:15,216 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:16:15,216 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:16:15,217 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:16:15,661 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:16,127 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:16:16,661 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:17,661 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:18,661 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:19,220 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:19,314 DEBUG   SenderThread:44198 [sender.py:send():379] send: stats
+2024-07-29 01:16:19,663 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:20,401 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:16:20,404 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:16:20,405 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:16:20,409 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:16:20,663 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:21,132 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:16:21,663 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:22,662 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:23,662 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:24,412 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:24,456 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:16:24,457 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:16:24,663 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:25,662 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:26,663 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:27,666 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:28,663 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:29,464 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:29,664 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:30,664 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:31,664 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:32,664 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:33,666 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:34,465 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:34,664 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:35,664 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:36,227 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:16:36,229 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:16:36,229 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:16:36,229 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:16:36,664 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:37,140 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:16:37,665 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:38,665 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:39,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:16:39,456 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:16:39,665 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:39,702 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:40,665 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:41,667 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:42,666 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:43,666 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:44,666 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:45,371 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:45,666 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:45,763 DEBUG   SenderThread:44198 [sender.py:send():379] send: config
+2024-07-29 01:16:46,667 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:47,668 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:48,147 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/output.log
+2024-07-29 01:16:48,667 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:49,314 DEBUG   SenderThread:44198 [sender.py:send():379] send: stats
+2024-07-29 01:16:49,669 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:49,703 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:16:49,704 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:16:49,705 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:16:49,705 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:16:50,149 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:16:50,382 DEBUG   SenderThread:44198 [sender.py:send():379] send: config
+2024-07-29 01:16:50,382 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:50,668 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:51,668 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:52,150 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/output.log
+2024-07-29 01:16:52,668 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:53,437 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:16:53,440 DEBUG   SenderThread:44198 [sender.py:send():379] send: metric
+2024-07-29 01:16:53,441 DEBUG   SenderThread:44198 [sender.py:send():379] send: metric
+2024-07-29 01:16:53,442 DEBUG   SenderThread:44198 [sender.py:send():379] send: history
+2024-07-29 01:16:53,442 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:16:53,443 INFO    SenderThread:44198 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:16:53,513 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: pause
+2024-07-29 01:16:53,513 INFO    HandlerThread:44198 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-29 01:16:53,514 INFO    HandlerThread:44198 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-29 01:16:53,514 DEBUG   SystemMonitor:44198 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-29 01:16:53,515 INFO    HandlerThread:44198 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-29 01:16:53,515 DEBUG   SystemMonitor:44198 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-29 01:16:53,515 INFO    HandlerThread:44198 [interfaces.py:finish():200] Joined disk monitor
+2024-07-29 01:16:53,516 INFO    HandlerThread:44198 [interfaces.py:finish():200] Joined memory monitor
+2024-07-29 01:16:53,516 INFO    HandlerThread:44198 [interfaces.py:finish():200] Joined network monitor
+2024-07-29 01:16:53,517 DEBUG   SenderThread:44198 [sender.py:send():379] send: stats
+2024-07-29 01:16:53,668 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:54,151 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/wandb-summary.json
+2024-07-29 01:16:54,455 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:16:54,456 DEBUG   SenderThread:44198 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:16:54,669 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:55,653 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:16:55,669 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:56,152 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/output.log
+2024-07-29 01:16:56,669 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:57,669 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:58,669 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:16:59,670 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:17:00,670 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:17:01,466 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:17:01,670 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:17:02,670 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:17:03,670 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:17:04,670 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:17:05,670 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:17:06,470 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:17:06,670 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:17:07,157 INFO    Thread-12 :44198 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_011247-chetiwzw/files/config.yaml
+2024-07-29 01:17:07,671 DEBUG   HandlerThread:44198 [handler.py:handle_request():158] handle_request: internal_messages

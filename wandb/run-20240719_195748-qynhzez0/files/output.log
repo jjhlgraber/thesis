@@ -1,0 +1,15 @@
+  | Name                | Type                    | Params | Mode
+------------------------------------------------------------------------
+0 | base_embedder       | SetCNNEmbedder          | 41.3 K | train
+1 | contextual_embedder | SimpleAbstractorEncoder | 25.2 K | train
+2 | embedder            | Sequential              | 66.5 K | train
+3 | aggregate_seq       | Flatten                 | 0      | train
+4 | final_layer         | SetClassifierLayer      | 97     | train
+5 | accuracy            | BinaryAccuracy          | 0      | train
+------------------------------------------------------------------------
+66.6 K    Trainable params
+0         Non-trainable params
+66.6 K    Total params
+0.266     Total estimated model params size (MB)
+/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/loops/fit_loop.py:298: The number of training batches (30) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...

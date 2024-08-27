@@ -1,0 +1,11 @@
+  | Name          | Type               | Params | Mode
+-------------------------------------------------------------
+0 | embedder      | Sequential         | 0      | train
+1 | aggregate_seq | Flatten            | 0      | train
+2 | final_layer   | SetClassifierLayer | 148    | train
+-------------------------------------------------------------
+148       Trainable params
+0         Non-trainable params
+148       Total params
+0.001     Total estimated model params size (MB)
+`Trainer.fit` stopped: `max_epochs=200` reached.

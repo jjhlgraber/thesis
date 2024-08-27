@@ -1,0 +1,23 @@
+  | Name          | Type               | Params | Mode
+-------------------------------------------------------------
+0 | base_embedder | SetCNNEmbedder     | 41.3 K | train
+1 | embedder      | Sequential         | 41.3 K | train
+2 | aggregate_seq | Flatten            | 0      | train
+3 | final_layer   | SetClassifierLayer | 6.9 K  | train
+-------------------------------------------------------------
+48.3 K    Trainable params
+0         Non-trainable params
+48.3 K    Total params
+0.193     Total estimated model params size (MB)
+/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/call.py:54: Detected KeyboardInterrupt, attempting graceful shutdown...
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+     Validate metric           DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+         val_acc            0.9955061078071594
+        val_loss            0.11401337385177612
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+       Test metric             DataLoader 0
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+        test_acc            0.9956036806106567
+        test_loss           0.11414466798305511

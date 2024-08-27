@@ -1,0 +1,12 @@
+  | Name                | Type                    | Params | Mode
+------------------------------------------------------------------------
+0 | contextual_embedder | SimpleAbstractorEncoder | 66.9 K | train
+1 | embedder            | Sequential              | 66.9 K | train
+2 | final_layer         | SetClassifierLayer      | 193    | train
+3 | aggregate_seq       | Flatten                 | 0      | train
+4 | accuracy            | BinaryAccuracy          | 0      | train
+------------------------------------------------------------------------
+67.1 K    Trainable params
+0         Non-trainable params
+67.1 K    Total params
+0.269     Total estimated model params size (MB)

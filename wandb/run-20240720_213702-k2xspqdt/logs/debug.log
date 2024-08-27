@@ -1,0 +1,76 @@
+2024-07-20 21:37:02,465 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Current SDK version is 0.17.3
+2024-07-20 21:37:02,466 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Configure stats pid to 13483
+2024-07-20 21:37:02,466 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Loading settings from /home/job/.config/wandb/settings
+2024-07-20 21:37:02,466 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Loading settings from /home/job/Documents/Thesis/code/experiments/wandb/settings
+2024-07-20 21:37:02,466 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-20 21:37:02,466 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-20 21:37:02,466 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-20 21:37:02,466 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-20 21:37:02,467 INFO    MainThread:13483 [wandb_init.py:_log_setup():520] Logging user logs to ./wandb/run-20240720_213702-k2xspqdt/logs/debug.log
+2024-07-20 21:37:02,467 INFO    MainThread:13483 [wandb_init.py:_log_setup():521] Logging internal logs to ./wandb/run-20240720_213702-k2xspqdt/logs/debug-internal.log
+2024-07-20 21:37:02,467 INFO    MainThread:13483 [wandb_init.py:_jupyter_setup():466] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7d7700725700>
+2024-07-20 21:37:02,468 INFO    MainThread:13483 [wandb_init.py:init():560] calling init triggers
+2024-07-20 21:37:02,468 INFO    MainThread:13483 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-07-20 21:37:02,468 INFO    MainThread:13483 [wandb_init.py:init():610] starting backend
+2024-07-20 21:37:02,469 INFO    MainThread:13483 [wandb_init.py:init():614] setting up manager
+2024-07-20 21:37:02,472 INFO    MainThread:13483 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-20 21:37:02,473 INFO    MainThread:13483 [wandb_init.py:init():622] backend started and connected
+2024-07-20 21:37:02,493 INFO    MainThread:13483 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2024-07-20 21:37:02,493 INFO    MainThread:13483 [wandb_run.py:_label_probe_notebook():1344] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-20 21:37:02,493 INFO    MainThread:13483 [wandb_init.py:init():711] updated telemetry
+2024-07-20 21:37:02,496 INFO    MainThread:13483 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-07-20 21:37:03,205 INFO    MainThread:13483 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-20 21:37:03,278 INFO    MainThread:13483 [wandb_run.py:_on_init():2411] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-20 21:37:03,278 INFO    MainThread:13483 [wandb_init.py:init():795] starting run threads in backend
+2024-07-20 21:37:05,915 WARNING MainThread:13483 [wandb_init.py:init():1175] interrupted
+Traceback (most recent call last):
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1171, in init
+    return wi.init()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 808, in init
+    run_start_result = run_start_handle.wait(timeout=30)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/threading.py", line 581, in wait
+    signaled = self._cond.wait(timeout)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/threading.py", line 316, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+2024-07-20 21:37:05,938 INFO    MainThread:13483 [wandb_settings.py:_apply_login():1924] Applying login settings: {}
+2024-07-20 21:37:05,952 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Current SDK version is 0.17.3
+2024-07-20 21:37:05,952 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Configure stats pid to 13483
+2024-07-20 21:37:05,952 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Loading settings from /home/job/.config/wandb/settings
+2024-07-20 21:37:05,953 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Loading settings from /home/job/Documents/Thesis/code/experiments/wandb/settings
+2024-07-20 21:37:05,953 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-20 21:37:05,954 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-20 21:37:05,954 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-20 21:37:05,954 INFO    MainThread:13483 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-20 21:37:05,954 INFO    MainThread:13483 [wandb_init.py:_log_setup():520] Logging user logs to ./wandb/run-20240720_213705-2e1rfid5/logs/debug.log
+2024-07-20 21:37:05,954 INFO    MainThread:13483 [wandb_init.py:_log_setup():521] Logging internal logs to ./wandb/run-20240720_213705-2e1rfid5/logs/debug-internal.log
+2024-07-20 21:37:05,955 INFO    MainThread:13483 [wandb_init.py:init():560] calling init triggers
+2024-07-20 21:37:05,955 INFO    MainThread:13483 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-07-20 21:37:05,955 INFO    MainThread:13483 [wandb_init.py:init():610] starting backend
+2024-07-20 21:37:05,955 INFO    MainThread:13483 [wandb_init.py:init():614] setting up manager
+2024-07-20 21:37:05,958 INFO    MainThread:13483 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-20 21:37:05,958 INFO    MainThread:13483 [wandb_init.py:init():622] backend started and connected
+2024-07-20 21:37:05,972 INFO    MainThread:13483 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2024-07-20 21:37:05,973 INFO    MainThread:13483 [wandb_run.py:_label_probe_notebook():1344] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-20 21:37:05,974 INFO    MainThread:13483 [wandb_init.py:init():711] updated telemetry
+2024-07-20 21:37:05,976 INFO    MainThread:13483 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-07-20 21:37:21,438 WARNING MsgRouterThr:13483 [router.py:message_loop():77] message_loop has been closed
+2024-07-20 21:37:21,440 WARNING MsgRouterThr:13483 [router.py:message_loop():77] message_loop has been closed
+2024-07-20 21:37:31,003 ERROR   MainThread:13483 [wandb_init.py:init():1181] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 1171, in init
+    return wi.init()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/wandb_init.py", line 747, in init
+    result = run_init_handle.wait(
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/lib/mailbox.py", line 281, in wait
+    raise MailboxError("transport failed")
+wandb.sdk.lib.mailbox.MailboxError: transport failed

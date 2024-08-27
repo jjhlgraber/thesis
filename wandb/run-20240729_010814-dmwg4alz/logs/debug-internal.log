@@ -1,0 +1,482 @@
+2024-07-29 01:08:14,260 INFO    StreamThr :42501 [internal.py:wandb_internal():85] W&B internal server running at pid: 42501, started at: 2024-07-29 01:08:14.259549
+2024-07-29 01:08:14,264 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status
+2024-07-29 01:08:14,284 INFO    WriterThread:42501 [datastore.py:open_for_write():87] open: ./wandb/run-20240729_010814-dmwg4alz/run-dmwg4alz.wandb
+2024-07-29 01:08:14,286 DEBUG   SenderThread:42501 [sender.py:send():379] send: header
+2024-07-29 01:08:14,325 DEBUG   SenderThread:42501 [sender.py:send():379] send: run
+2024-07-29 01:08:14,329 INFO    SenderThread:42501 [sender.py:_setup_resume():749] checking resume status for None/first_project/dmwg4alz
+2024-07-29 01:08:15,033 INFO    SenderThread:42501 [dir_watcher.py:__init__():211] watching files in: ./wandb/run-20240729_010814-dmwg4alz/files
+2024-07-29 01:08:15,033 INFO    SenderThread:42501 [sender.py:_start_run_threads():1188] run started: dmwg4alz with start time 1722208094.261076
+2024-07-29 01:08:15,041 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: check_version
+2024-07-29 01:08:15,042 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: check_version
+2024-07-29 01:08:15,486 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: run_start
+2024-07-29 01:08:15,488 DEBUG   HandlerThread:42501 [system_info.py:__init__():26] System info init
+2024-07-29 01:08:15,488 DEBUG   HandlerThread:42501 [system_info.py:__init__():41] System info init done
+2024-07-29 01:08:15,488 INFO    HandlerThread:42501 [system_monitor.py:start():194] Starting system monitor
+2024-07-29 01:08:15,488 INFO    SystemMonitor:42501 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-29 01:08:15,488 INFO    HandlerThread:42501 [system_monitor.py:probe():214] Collecting system info
+2024-07-29 01:08:15,489 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started cpu monitoring
+2024-07-29 01:08:15,490 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started disk monitoring
+2024-07-29 01:08:15,491 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started memory monitoring
+2024-07-29 01:08:15,492 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started network monitoring
+2024-07-29 01:08:15,500 DEBUG   HandlerThread:42501 [system_info.py:probe():152] Probing system
+2024-07-29 01:08:15,506 DEBUG   HandlerThread:42501 [gitlib.py:_init_repo():56] git repository is invalid
+2024-07-29 01:08:15,506 DEBUG   HandlerThread:42501 [system_info.py:probe():200] Probing system done
+2024-07-29 01:08:15,506 DEBUG   HandlerThread:42501 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-44-generic-x86_64-with-glibc2.35', 'python': '3.9.19', 'heartbeatAt': '2024-07-28T23:08:15.500113', 'startedAt': '2024-07-28T23:08:14.249580', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'host': 'job-laptop', 'username': 'job', 'executable': '/home/job/miniconda3/envs/LTN/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2548.7867499999998, 'min': 400.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 2679.514, 'min': 400.0, 'max': 3600.0}, {'current': 2562.06, 'min': 400.0, 'max': 3600.0}, {'current': 2528.329, 'min': 400.0, 'max': 3600.0}, {'current': 2705.58, 'min': 400.0, 'max': 3600.0}, {'current': 2632.153, 'min': 400.0, 'max': 3600.0}, {'current': 2577.395, 'min': 400.0, 'max': 3600.0}, {'current': 2506.374, 'min': 400.0, 'max': 3600.0}, {'current': 2602.312, 'min': 400.0, 'max': 3600.0}], 'disk': {'/': {'total': 233.17998886108398, 'used': 125.24254608154297}}, 'memory': {'total': 7.443946838378906}}
+2024-07-29 01:08:15,507 INFO    HandlerThread:42501 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-29 01:08:15,507 INFO    HandlerThread:42501 [system_monitor.py:probe():227] Publishing system info
+2024-07-29 01:08:15,507 DEBUG   HandlerThread:42501 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2024-07-29 01:08:16,035 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_010814-dmwg4alz/files/conda-environment.yaml
+2024-07-29 01:08:19,439 DEBUG   HandlerThread:42501 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-29 01:08:19,440 INFO    HandlerThread:42501 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-29 01:08:19,450 DEBUG   SenderThread:42501 [sender.py:send():379] send: files
+2024-07-29 01:08:19,450 INFO    SenderThread:42501 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-29 01:08:19,451 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:08:19,634 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-29 01:08:19,635 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: python_packages
+2024-07-29 01:08:19,636 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:08:19,637 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:08:19,643 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:19,875 DEBUG   SenderThread:42501 [sender.py:send():379] send: telemetry
+2024-07-29 01:08:19,877 DEBUG   SenderThread:42501 [sender.py:send():379] send: telemetry
+2024-07-29 01:08:19,878 DEBUG   SenderThread:42501 [sender.py:send():379] send: metric
+2024-07-29 01:08:19,879 DEBUG   SenderThread:42501 [sender.py:send():379] send: telemetry
+2024-07-29 01:08:19,879 DEBUG   SenderThread:42501 [sender.py:send():379] send: metric
+2024-07-29 01:08:19,880 WARNING SenderThread:42501 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-07-29 01:08:19,997 INFO    wandb-upload_0:42501 [upload_job.py:push():130] Uploaded file /tmp/tmpqqptz5hqwandb/0ng0i9o5-wandb-metadata.json
+2024-07-29 01:08:20,036 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/conda-environment.yaml
+2024-07-29 01:08:20,037 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_010814-dmwg4alz/files/wandb-metadata.json
+2024-07-29 01:08:20,037 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_010814-dmwg4alz/files/requirements.txt
+2024-07-29 01:08:20,347 DEBUG   SenderThread:42501 [sender.py:send():379] send: config
+2024-07-29 01:08:20,641 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:21,036 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_010814-dmwg4alz/files/output.log
+2024-07-29 01:08:21,659 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:22,681 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:22,685 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: pause
+2024-07-29 01:08:22,685 INFO    HandlerThread:42501 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-29 01:08:22,685 INFO    HandlerThread:42501 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-29 01:08:22,686 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-29 01:08:22,686 DEBUG   SystemMonitor:42501 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-29 01:08:22,686 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined disk monitor
+2024-07-29 01:08:22,686 DEBUG   SystemMonitor:42501 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-29 01:08:22,686 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined memory monitor
+2024-07-29 01:08:22,686 DEBUG   SystemMonitor:42501 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-29 01:08:22,686 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined network monitor
+2024-07-29 01:08:22,687 DEBUG   SenderThread:42501 [sender.py:send():379] send: stats
+2024-07-29 01:08:23,037 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/output.log
+2024-07-29 01:08:23,651 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:24,639 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:08:24,651 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:25,651 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:26,651 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:27,652 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:28,652 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:29,652 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:30,639 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:08:30,652 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:31,652 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:32,652 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:33,653 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:34,636 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:08:34,637 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:08:34,678 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:35,653 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:35,824 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:08:36,654 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:37,654 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:38,654 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:39,654 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:40,655 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:41,640 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:08:41,655 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:42,655 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:43,655 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:44,655 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:45,656 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:46,656 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:47,646 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:08:47,656 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:48,051 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/config.yaml
+2024-07-29 01:08:48,656 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:49,636 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:08:49,637 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:08:49,678 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:50,657 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:51,657 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:52,657 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:52,878 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:08:53,657 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:54,657 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:55,658 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:56,658 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:57,659 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:58,641 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:08:58,659 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:08:59,659 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:00,659 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:01,659 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:01,884 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: resume
+2024-07-29 01:09:01,884 INFO    HandlerThread:42501 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-07-29 01:09:01,884 INFO    HandlerThread:42501 [system_monitor.py:start():194] Starting system monitor
+2024-07-29 01:09:01,885 INFO    SystemMonitor:42501 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-29 01:09:01,885 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started cpu monitoring
+2024-07-29 01:09:01,885 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started disk monitoring
+2024-07-29 01:09:01,886 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started memory monitoring
+2024-07-29 01:09:01,887 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started network monitoring
+2024-07-29 01:09:02,378 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: pause
+2024-07-29 01:09:02,379 INFO    HandlerThread:42501 [handler.py:handle_request_pause():724] stopping system metrics thread
+2024-07-29 01:09:02,379 INFO    HandlerThread:42501 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-29 01:09:02,379 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-29 01:09:02,379 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined disk monitor
+2024-07-29 01:09:02,379 DEBUG   SystemMonitor:42501 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-29 01:09:02,379 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined memory monitor
+2024-07-29 01:09:02,379 DEBUG   SystemMonitor:42501 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-29 01:09:02,380 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined network monitor
+2024-07-29 01:09:02,380 DEBUG   SystemMonitor:42501 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-29 01:09:02,380 DEBUG   SenderThread:42501 [sender.py:send():379] send: stats
+2024-07-29 01:09:02,659 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:03,659 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:04,381 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:04,491 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: resume
+2024-07-29 01:09:04,491 INFO    HandlerThread:42501 [handler.py:handle_request_resume():715] starting system metrics thread
+2024-07-29 01:09:04,491 INFO    HandlerThread:42501 [system_monitor.py:start():194] Starting system monitor
+2024-07-29 01:09:04,492 INFO    SystemMonitor:42501 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-29 01:09:04,492 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started cpu monitoring
+2024-07-29 01:09:04,492 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started disk monitoring
+2024-07-29 01:09:04,493 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started memory monitoring
+2024-07-29 01:09:04,493 INFO    SystemMonitor:42501 [interfaces.py:start():188] Started network monitoring
+2024-07-29 01:09:04,837 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:09:04,838 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:09:04,900 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:05,035 DEBUG   SenderThread:42501 [sender.py:send():379] send: config
+2024-07-29 01:09:05,846 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:06,846 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:07,061 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/output.log
+2024-07-29 01:09:07,847 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:08,846 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:09,839 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:09,846 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:10,847 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:11,846 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:12,847 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:13,847 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:14,841 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:14,848 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:15,848 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:16,848 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:17,851 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:18,850 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:19,837 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:09:19,838 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:09:19,878 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:20,078 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:20,853 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:21,091 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/config.yaml
+2024-07-29 01:09:21,222 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:09:21,227 DEBUG   SenderThread:42501 [sender.py:send():379] send: metric
+2024-07-29 01:09:21,227 DEBUG   SenderThread:42501 [sender.py:send():379] send: metric
+2024-07-29 01:09:21,228 DEBUG   SenderThread:42501 [sender.py:send():379] send: metric
+2024-07-29 01:09:21,228 DEBUG   SenderThread:42501 [sender.py:send():379] send: history
+2024-07-29 01:09:21,228 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:09:21,230 INFO    SenderThread:42501 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:09:21,852 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:22,093 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240729_010814-dmwg4alz/files/wandb-summary.json
+2024-07-29 01:09:22,853 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:23,854 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:24,852 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:25,840 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:25,854 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:26,853 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:27,854 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:28,853 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:29,853 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:30,854 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:31,640 ERROR   FileStreamThread:42501 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/jjhlgraber-University%20of%20Amsterdam/first_project/dmwg4alz/file_stream
+NoneType: None
+2024-07-29 01:09:31,645 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:31,799 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:09:31,801 DEBUG   SenderThread:42501 [sender.py:send():379] send: metric
+2024-07-29 01:09:31,802 DEBUG   SenderThread:42501 [sender.py:send():379] send: history
+2024-07-29 01:09:31,802 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:09:31,803 INFO    SenderThread:42501 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:09:31,856 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:32,101 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/wandb-summary.json
+2024-07-29 01:09:32,858 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:33,101 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/output.log
+2024-07-29 01:09:33,857 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:34,766 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:09:34,768 DEBUG   SenderThread:42501 [sender.py:send():379] send: history
+2024-07-29 01:09:34,768 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:09:34,769 INFO    SenderThread:42501 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:09:34,838 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:09:34,839 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:09:34,861 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:35,103 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/wandb-summary.json
+2024-07-29 01:09:35,859 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:36,859 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:37,038 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:37,861 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:38,859 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:39,859 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:40,860 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:41,860 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:42,842 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:42,863 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:43,860 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:44,860 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:44,970 ERROR   FileStreamThread:42501 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/jjhlgraber-University%20of%20Amsterdam/first_project/dmwg4alz/file_stream
+NoneType: None
+2024-07-29 01:09:45,881 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:46,862 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:47,112 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/output.log
+2024-07-29 01:09:47,862 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:47,972 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:48,864 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:49,023 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:09:49,024 DEBUG   SenderThread:42501 [sender.py:send():379] send: history
+2024-07-29 01:09:49,024 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: summary_record
+2024-07-29 01:09:49,025 INFO    SenderThread:42501 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-29 01:09:49,113 INFO    Thread-12 :42501 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240729_010814-dmwg4alz/files/wandb-summary.json
+2024-07-29 01:09:49,838 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:09:49,839 DEBUG   SenderThread:42501 [sender.py:send_request():406] send_request: stop_status
+2024-07-29 01:09:49,864 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:50,863 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:51,863 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:52,863 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:53,082 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: status_report
+2024-07-29 01:09:53,267 ERROR   SenderThread:42501 [internal_api.py:execute():344] 409 response executing GraphQL.
+2024-07-29 01:09:53,267 ERROR   SenderThread:42501 [internal_api.py:execute():345] {"errors":[{"message":"run dmwg4alz was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-07-29 01:09:53,865 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:54,451 ERROR   SenderThread:42501 [internal_api.py:execute():344] 409 response executing GraphQL.
+2024-07-29 01:09:54,451 ERROR   SenderThread:42501 [internal_api.py:execute():345] {"errors":[{"message":"run dmwg4alz was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-07-29 01:09:54,863 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:55,863 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:56,864 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:56,884 ERROR   SenderThread:42501 [internal_api.py:execute():344] 409 response executing GraphQL.
+2024-07-29 01:09:56,884 ERROR   SenderThread:42501 [internal_api.py:execute():345] {"errors":[{"message":"run dmwg4alz was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-07-29 01:09:56,885 INFO    SenderThread:42501 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+2024-07-29 01:09:57,864 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:58,864 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:09:59,154 ERROR   FileStreamThread:42501 [file_stream.py:_handle_response():510] dropped chunk 404 Client Error: Not Found for url: https://api.wandb.ai/files/jjhlgraber-University%20of%20Amsterdam/first_project/dmwg4alz/file_stream
+NoneType: None
+2024-07-29 01:09:59,864 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:00,864 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:01,171 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:10:01,304 ERROR   SenderThread:42501 [internal_api.py:execute():344] 409 response executing GraphQL.
+2024-07-29 01:10:01,304 ERROR   SenderThread:42501 [internal_api.py:execute():345] {"errors":[{"message":"run dmwg4alz was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-07-29 01:10:01,866 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:02,866 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:03,865 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:04,493 DEBUG   SystemMonitor:42501 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-29 01:10:04,838 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-29 01:10:04,878 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:05,185 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:10:05,866 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:06,866 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:07,867 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:08,866 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:09,866 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:10,575 ERROR   SenderThread:42501 [internal_api.py:execute():344] 409 response executing GraphQL.
+2024-07-29 01:10:10,576 ERROR   SenderThread:42501 [internal_api.py:execute():345] {"errors":[{"message":"run dmwg4alz was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-07-29 01:10:10,866 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:11,866 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:12,866 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:13,867 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:14,867 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:15,867 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:16,869 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:17,874 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:18,870 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:19,870 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:20,870 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:21,870 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:21,928 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:10:22,870 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:23,871 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:24,871 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:25,871 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:26,871 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:27,871 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:28,081 ERROR   SenderThread:42501 [internal_api.py:execute():344] 409 response executing GraphQL.
+2024-07-29 01:10:28,081 ERROR   SenderThread:42501 [internal_api.py:execute():345] {"errors":[{"message":"run dmwg4alz was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-07-29 01:10:28,871 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:29,873 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:30,873 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:31,872 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:32,856 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:10:32,898 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:33,880 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:34,880 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:35,880 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:36,437 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:10:36,880 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:37,880 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:38,881 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:39,881 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:40,881 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:41,881 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:42,881 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:43,882 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:44,881 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:45,882 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:46,882 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:47,883 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:48,884 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:49,786 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:10:49,883 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:50,885 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:51,885 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:52,884 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:53,885 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:54,885 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:55,886 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:56,885 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:57,886 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:58,885 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:10:59,886 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:00,887 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:01,076 ERROR   SenderThread:42501 [internal_api.py:execute():344] 409 response executing GraphQL.
+2024-07-29 01:11:01,076 ERROR   SenderThread:42501 [internal_api.py:execute():345] {"errors":[{"message":"run dmwg4alz was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-07-29 01:11:01,886 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:02,886 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:03,721 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:11:03,928 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:04,925 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:05,924 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:06,924 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:07,752 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:11:07,925 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:08,925 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:09,925 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:10,925 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:11,925 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:12,925 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:13,925 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:14,925 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:15,926 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:16,926 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:17,926 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:18,928 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:19,927 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:20,927 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:21,927 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:22,233 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:11:22,929 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:23,928 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:24,928 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:25,928 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:26,928 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:27,930 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:28,929 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:29,929 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:30,929 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:31,929 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:32,569 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:11:32,930 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:33,930 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:34,930 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:35,756 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:11:35,930 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:36,930 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:37,932 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:38,930 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:39,930 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:40,931 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:41,931 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:42,931 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:43,931 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:44,931 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:45,931 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:46,932 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:47,931 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:48,932 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:49,613 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:11:49,932 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:50,932 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:51,932 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:52,932 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:53,932 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:54,932 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:55,933 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:56,933 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:57,933 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:58,933 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:59,934 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:11:59,941 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:12:00,934 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:01,934 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:02,876 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-29 01:12:02,934 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:03,934 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:04,934 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:05,936 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:06,935 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:07,935 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:08,935 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:09,935 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:10,935 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:11,935 DEBUG   HandlerThread:42501 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-29 01:12:12,122 ERROR   SenderThread:42501 [internal_api.py:execute():344] 409 response executing GraphQL.
+2024-07-29 01:12:12,122 ERROR   SenderThread:42501 [internal_api.py:execute():345] {"errors":[{"message":"run dmwg4alz was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2024-07-29 01:12:12,123 INFO    HandlerThread:42501 [handler.py:finish():882] shutting down handler
+2024-07-29 01:12:12,123 INFO    WriterThread:42501 [datastore.py:close():296] close: ./wandb/run-20240729_010814-dmwg4alz/run-dmwg4alz.wandb
+2024-07-29 01:12:12,123 INFO    HandlerThread:42501 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-29 01:12:12,124 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-29 01:12:12,124 DEBUG   SystemMonitor:42501 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-29 01:12:12,124 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined disk monitor
+2024-07-29 01:12:12,124 DEBUG   SystemMonitor:42501 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-29 01:12:12,124 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined memory monitor
+2024-07-29 01:12:12,125 INFO    HandlerThread:42501 [interfaces.py:finish():200] Joined network monitor
+2024-07-29 01:12:12,503 ERROR   StreamThr :42501 [internal.py:wandb_internal():173] Thread SenderThread:
+Traceback (most recent call last):
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/apis/normalize.py", line 41, in wrapper
+    return func(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 2190, in upsert_run
+    response = self.gql(
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 312, in gql
+    ret = self._retry_gql(
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/internal_api.py", line 340, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/lib/gql_request.py", line 59, in execute
+    request.raise_for_status()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/requests/models.py", line 1024, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/internal_util.py", line 48, in run
+    self._run()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/internal_util.py", line 92, in _run
+    self._debounce()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/internal.py", line 333, in _debounce
+    self._sm.debounce()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/sender.py", line 537, in debounce
+    self._maybe_update_config(always=final)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/sender.py", line 514, in _maybe_update_config
+    self._debounce_config()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/sdk/internal/sender.py", line 543, in _debounce_config
+    self._api.upsert_run(
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/wandb/apis/normalize.py", line 51, in wrapper
+    raise CommError(message, error)
+wandb.errors.CommError: run dmwg4alz was previously created and deleted; try a new run name (Error 409: Conflict)

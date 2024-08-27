@@ -1,0 +1,42 @@
+2024-07-21 19:26:26,654 INFO    MainThread:33380 [wandb_setup.py:_flush():76] Current SDK version is 0.17.3
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_setup.py:_flush():76] Configure stats pid to 33380
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_setup.py:_flush():76] Loading settings from /home/job/.config/wandb/settings
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_setup.py:_flush():76] Loading settings from /home/job/Documents/Thesis/code/experiments/wandb/settings
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_init.py:_log_setup():520] Logging user logs to ./wandb/run-20240721_192626-t5ia3z95/logs/debug.log
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_init.py:_log_setup():521] Logging internal logs to ./wandb/run-20240721_192626-t5ia3z95/logs/debug-internal.log
+2024-07-21 19:26:26,655 INFO    MainThread:33380 [wandb_init.py:_jupyter_setup():466] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x771904bd0c70>
+2024-07-21 19:26:26,656 INFO    MainThread:33380 [wandb_init.py:init():560] calling init triggers
+2024-07-21 19:26:26,656 INFO    MainThread:33380 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {}
+2024-07-21 19:26:26,656 INFO    MainThread:33380 [wandb_init.py:init():610] starting backend
+2024-07-21 19:26:26,656 INFO    MainThread:33380 [wandb_init.py:init():614] setting up manager
+2024-07-21 19:26:26,659 INFO    MainThread:33380 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-21 19:26:26,662 INFO    MainThread:33380 [wandb_init.py:init():622] backend started and connected
+2024-07-21 19:26:26,692 INFO    MainThread:33380 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2024-07-21 19:26:26,693 INFO    MainThread:33380 [wandb_run.py:_label_probe_notebook():1344] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-21 19:26:26,694 INFO    MainThread:33380 [wandb_init.py:init():711] updated telemetry
+2024-07-21 19:26:26,758 INFO    MainThread:33380 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-07-21 19:26:27,683 INFO    MainThread:33380 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-21 19:26:27,787 INFO    MainThread:33380 [wandb_run.py:_on_init():2411] got version response upgrade_message: "wandb version 0.17.5 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-21 19:26:27,787 INFO    MainThread:33380 [wandb_init.py:init():795] starting run threads in backend
+2024-07-21 19:26:32,382 INFO    MainThread:33380 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-21 19:26:32,382 INFO    MainThread:33380 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-21 19:26:32,382 INFO    MainThread:33380 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-21 19:26:32,383 INFO    MainThread:33380 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-21 19:26:32,384 INFO    MainThread:33380 [wandb_init.py:init():838] run started, returning control to user process
+2024-07-21 19:26:32,405 INFO    MainThread:33380 [wandb_run.py:_config_callback():1382] config_cb None None {'seq_len': 2, 'label_choice': 'pairwise_sim', 'n_features': 4, 'hidden_sizes_classifier': [], 'lr': 0.001}
+2024-07-21 19:27:36,347 INFO    MainThread:33380 [wandb_run.py:_finish():2109] finishing run jjhlgraber-University of Amsterdam/first_project/t5ia3z95
+2024-07-21 19:27:36,348 ERROR   MainThread:33380 [jupyter.py:save_history():436] Run pip install nbformat to save notebook history
+2024-07-21 19:27:36,349 INFO    MainThread:33380 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-07-21 19:27:36,349 INFO    MainThread:33380 [wandb_init.py:_jupyter_teardown():448] cleaning up jupyter logic
+2024-07-21 19:27:36,349 INFO    MainThread:33380 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-07-21 19:27:36,350 INFO    MainThread:33380 [wandb_run.py:_restore():2332] restore
+2024-07-21 19:27:36,351 INFO    MainThread:33380 [wandb_run.py:_restore():2338] restore done
+2024-07-21 19:27:39,934 INFO    MainThread:33380 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-21 19:27:39,936 INFO    MainThread:33380 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-21 19:27:39,951 INFO    MainThread:33380 [wandb_run.py:_footer_sync_info():3950] logging synced files

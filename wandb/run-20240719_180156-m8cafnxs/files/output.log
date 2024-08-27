@@ -1,0 +1,13 @@
+  | Name          | Type               | Params | Mode
+-------------------------------------------------------------
+0 | base_embedder | SetCNNEmbedder     | 33.3 K | train
+1 | embedder      | Sequential         | 33.3 K | train
+2 | aggregate_seq | Flatten            | 0      | train
+3 | final_layer   | SetClassifierLayer | 36     | train
+-------------------------------------------------------------
+33.4 K    Trainable params
+0         Non-trainable params
+33.4 K    Total params
+0.134     Total estimated model params size (MB)
+/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/utilities/data.py:105: Total length of `DataLoader` across ranks is zero. Please make sure this was your intention.
+`Trainer.fit` stopped: `max_epochs=1000` reached.

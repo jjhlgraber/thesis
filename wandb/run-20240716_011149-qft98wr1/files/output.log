@@ -1,0 +1,68 @@
+
+Sanity Checking DataLoader 0:   0%|                                                                                                             | 0/1 [00:00<?, ?it/s]
+  | Name                | Type                         | Params | Mode
+-----------------------------------------------------------------------------
+0 | base_embedder       | SetCNNEmbedder               | 41.3 K | train
+1 | contextual_embedder | SimpleAbstractorEncoderLayer | 29.1 K | train
+2 | embedder            | Sequential                   | 70.5 K | train
+3 | aggregate_seq       | Flatten                      | 0      | train
+4 | final_layer         | SetClassifierLayer           | 6.9 K  | train
+-----------------------------------------------------------------------------
+77.4 K    Trainable params
+0         Non-trainable params
+77.4 K    Total params
+0.310     Total estimated model params size (MB)
+Traceback (most recent call last):
+  File "/home/job/Documents/Thesis/code/experiments/test_run.py", line 50, in <module>
+    trainer.fit(seq_model, dm)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 543, in fit
+    call._call_and_handle_interrupt(
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/call.py", line 44, in _call_and_handle_interrupt
+    return trainer_fn(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 579, in _fit_impl
+    self._run(model, ckpt_path=ckpt_path)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 986, in _run
+    results = self._run_stage()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1028, in _run_stage
+    self._run_sanity_check()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/trainer.py", line 1057, in _run_sanity_check
+    val_loop.run()
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/loops/utilities.py", line 182, in _decorator
+    return loop_run(self, *args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 135, in run
+    self._evaluation_step(batch, batch_idx, dataloader_idx, dataloader_iter)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/loops/evaluation_loop.py", line 396, in _evaluation_step
+    output = call._call_strategy_hook(trainer, hook_name, *step_args)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/trainer/call.py", line 311, in _call_strategy_hook
+    output = fn(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/strategies/strategy.py", line 411, in validation_step
+    return self.lightning_module.validation_step(*args, **kwargs)
+  File "/home/job/Documents/Thesis/code/experiments/set_models.py", line 202, in validation_step
+    logits = self(input_seq)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/job/Documents/Thesis/code/experiments/set_models.py", line 187, in forward
+    sequence_embed = self.embedder(sequence)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/job/Documents/Thesis/code/experiments/set_models.py", line 22, in forward
+    x = self.pool(F.relu(self.conv1(x)))
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Given groups=1, weight of size [32, 4, 5, 5], expected input[1, 64, 70, 50] to have 4 channels, but got 64 channels instead

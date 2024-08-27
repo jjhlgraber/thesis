@@ -1,0 +1,15 @@
+/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/torch/utils/data/dataset.py:472: UserWarning: Length of split at index 2 is 0. This might result in an empty dataset.
+  warnings.warn(
+  | Name          | Type               | Params | Mode
+-------------------------------------------------------------
+0 | base_embedder | SetCNNEmbedder     | 41.3 K | train
+1 | embedder      | Sequential         | 41.3 K | train
+2 | aggregate_seq | Flatten            | 0      | train
+3 | final_layer   | SetClassifierLayer | 2.4 K  | train
+-------------------------------------------------------------
+43.7 K    Trainable params
+0         Non-trainable params
+43.7 K    Total params
+0.175     Total estimated model params size (MB)
+/home/job/miniconda3/envs/LTN/lib/python3.9/site-packages/pytorch_lightning/loops/fit_loop.py:298: The number of training batches (2) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+`Trainer.fit` stopped: `max_epochs=50` reached.

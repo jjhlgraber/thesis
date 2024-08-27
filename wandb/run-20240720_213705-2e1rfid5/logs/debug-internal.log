@@ -1,0 +1,23 @@
+2024-07-20 21:37:05,960 INFO    StreamThr :13524 [internal.py:wandb_internal():85] W&B internal server running at pid: 13524, started at: 2024-07-20 21:37:05.959368
+2024-07-20 21:37:05,961 DEBUG   HandlerThread:13524 [handler.py:handle_request():158] handle_request: status
+2024-07-20 21:37:05,975 INFO    WriterThread:13524 [datastore.py:open_for_write():87] open: ./wandb/run-20240720_213705-2e1rfid5/run-2e1rfid5.wandb
+2024-07-20 21:37:05,976 DEBUG   SenderThread:13524 [sender.py:send():379] send: header
+2024-07-20 21:37:05,977 DEBUG   SenderThread:13524 [sender.py:send():379] send: run
+2024-07-20 21:37:05,982 INFO    SenderThread:13524 [sender.py:_setup_resume():749] checking resume status for None/first_project/2e1rfid5
+2024-07-20 21:37:06,675 INFO    SenderThread:13524 [dir_watcher.py:__init__():211] watching files in: ./wandb/run-20240720_213705-2e1rfid5/files
+2024-07-20 21:37:06,675 INFO    SenderThread:13524 [sender.py:_start_run_threads():1188] run started: 2e1rfid5 with start time 1721504225.958934
+2024-07-20 21:37:07,376 DEBUG   HandlerThread:13524 [system_info.py:_save_conda():224] Saving conda packages done
+2024-07-20 21:37:07,377 INFO    HandlerThread:13524 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-20 21:37:07,378 DEBUG   SenderThread:13524 [sender.py:send():379] send: files
+2024-07-20 21:37:07,378 INFO    SenderThread:13524 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-20 21:37:08,196 INFO    Thread-108:13524 [dir_watcher.py:_on_file_modified():288] file/dir modified: ./wandb/run-20240720_213702-k2xspqdt/files/conda-environment.yaml
+2024-07-20 21:37:08,197 INFO    Thread-108:13524 [dir_watcher.py:_on_file_created():271] file/dir created: ./wandb/run-20240720_213702-k2xspqdt/files/wandb-metadata.json
+2024-07-20 21:37:08,209 INFO    wandb-upload_0:13524 [upload_job.py:push():130] Uploaded file /tmp/tmpcs9a8e1swandb/9kk1rt7r-wandb-metadata.json
+2024-07-20 21:37:08,379 DEBUG   HandlerThread:13524 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 21:37:10,984 DEBUG   HandlerThread:13524 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-20 21:37:11,676 DEBUG   HandlerThread:13524 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 21:37:13,380 DEBUG   HandlerThread:13524 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 21:37:15,988 DEBUG   HandlerThread:13524 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-20 21:37:16,677 DEBUG   HandlerThread:13524 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 21:37:18,381 DEBUG   HandlerThread:13524 [handler.py:handle_request():158] handle_request: status_report
+2024-07-20 21:37:20,996 DEBUG   HandlerThread:13524 [handler.py:handle_request():158] handle_request: keepalive

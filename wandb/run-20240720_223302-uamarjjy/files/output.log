@@ -1,0 +1,13 @@
+  | Name                | Type                    | Params | Mode
+------------------------------------------------------------------------
+0 | contextual_embedder | SimpleAbstractorEncoder | 33.5 K | train
+1 | embedder            | Sequential              | 33.5 K | train
+2 | final_layer         | SetClassifierLayer      | 193    | train
+3 | aggregate_seq       | Flatten                 | 0      | train
+4 | accuracy            | BinaryAccuracy          | 0      | train
+------------------------------------------------------------------------
+33.7 K    Trainable params
+0         Non-trainable params
+33.7 K    Total params
+0.135     Total estimated model params size (MB)
+`Trainer.fit` stopped: `max_epochs=50` reached.

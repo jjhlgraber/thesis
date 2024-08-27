@@ -1,0 +1,74 @@
+{
+    "os": "Linux-6.5.0-41-generic-x86_64-with-glibc2.35",
+    "python": "3.9.19",
+    "heartbeatAt": "2024-07-15T23:14:40.528066",
+    "startedAt": "2024-07-15T23:14:39.729572",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/job/Documents/Thesis/code/experiments/test_run.py",
+    "codePathLocal": "test_run.py",
+    "codePath": "test_run.py",
+    "host": "job-laptop",
+    "username": "job",
+    "executable": "/home/job/miniconda3/envs/LTN/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 1185.7,
+        "min": 400.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1245.486,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1207.873,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1228.061,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1168.819,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.699,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1165.019,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1170.133,
+            "min": 400.0,
+            "max": 3600.0
+        },
+        {
+            "current": 825.845,
+            "min": 400.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 233.17998886108398,
+            "used": 125.30469131469727
+        }
+    },
+    "memory": {
+        "total": 7.443958282470703
+    }
+}
