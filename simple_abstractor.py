@@ -256,6 +256,10 @@ class SimpleMultiHeadAttention(nn.Module):
         # Apply activation function
         attn_weights = self.activation(scores)
 
+        # with torch.no_grad():
+        #     # check symmetry
+        #     print(torch.abs(attn_weights - attn_weights.permute(0, 1, 3, 2)).mean())
+
         # Calculate weighted sum of values
         attn_output = torch.matmul(attn_weights, value)
 
